@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+</head>
+<body>
+    <!------satar header----->
+    <header>
+        <h1>Port <span>folio</span></h1>
+        <div>
+               <ul class="navbar">
+                   <li class="menu-acc">  <a href="index.html">Accueil</a></li>
+                   <li class="menu-pro"><a href="Projet.html">Projet</a></li>
+                   <li class="menu-a-pros"><a href="A-propos.html">A-propos</a></li>
+                  <li class="menu-con"><a href="Contact.html">Contat</a></li>
+             </ul>
+             <img src="bout.jfif" alt="menu" class="menu">
+        </div> 
+    
+    </header>
+        <!------link to js----->
+                <div class="contact-titre"><h1>contactez</h1></div>
+                <section class="contact">
+                    <div class="contact-form">
+                    <form action="">
+                        <input type=""placeholder="Votre Nom"required> 
+                        <input type="email"name=""id=""placeholder="Votre Email"required> 
+                        <input type=""placeholder="votre objet"required> 
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"required></textarea>
+                        <input type="submit"name="" value="Envovez" class="envoi">
+                        
+                    </form>
+                    </div>
+                </section>
+                <script>
+                    const menu = document.querySelector(" .menu ") 
+                    const navbar = document.querySelector(".navbar" ) 
+                    
+                           menu.addEventListener('click',()=>{
+                            navbar.classList.toggle('mobile-menu')
+                           })
+                   </script>      
+</body>
+</html>

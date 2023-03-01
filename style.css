@@ -1,0 +1,357 @@
+body{
+    font-family: century gothic; 
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(hgk.png);
+    color: #fff;
+    }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15px;
+    transition-duration:  .3s;
+}
+h1{
+    color: #fff;
+}
+span{
+    color: red;
+}
+.navbar{
+    display: flex;
+   
+}
+.navbar li{
+    position: relative;
+    list-style-type: none;
+    
+}
+.navbar a:hover{
+    background-color: rgb(2, 24, 47);
+    border: 5px solid rgba(2, 24, 47, 0.435);
+}
+
+.navbar a{
+    
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px; 
+    color: #fff;
+  
+
+}
+.navbar a::after{
+    
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+header h1{
+    padding-left: 30px;
+}
+/*Accueil*/
+.container{
+   
+    width: 100%;
+   
+    left: 0px;
+}
+.container h1{
+    font-size: 60px;
+}
+.container h2{
+    font-size: 40px;
+    margin-top: 0px;
+}
+.container img{
+    margin-left: 10px;
+    
+}
+section{
+    margin-top: -20%;
+}
+.Accueil a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 183, 255, 0.565);
+    border-radius: 10px 10px;
+    font-size: 25px;
+}
+/*Mes projets*/
+.projets{
+    margin-top: 0px;
+    
+}
+.projets .contenu{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2em;
+    align-items: center;
+    margin-top: 4.5rem;
+   
+}
+.contenu img{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 190px;
+    width: 70%;
+    margin-bottom: 20px;
+    transition: all .30s;
+}
+.contenu img:hover{
+    transform: scale(1.1);
+}
+.titre h1{
+    padding-top: 95px;
+    text-align: center;
+    font-size: 45px;
+}
+/*Accueil*/
+.container{
+    margin-top: 160px;
+    
+    width: 100%;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image img{
+    width: 280px;
+    height: 400px;
+}
+.image{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 30px;
+    
+}
+.container .Accueil h1, .container .Accueil h2, .container .Accueil h3{
+    padding-left: 25px;
+    
+}
+.container .Accueil{
+    margin-top: 0px;
+}
+/*A propos*/
+.contener{
+    margin-top: 160px;
+    
+    width: 100%;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contener .left h1{
+    font-size: 40px;
+    
+}
+.right img{
+    width: 300px;
+    height: 350px;
+    margin-left: 100px;
+   
+}
+.right{
+    margin-left: 0px;
+    margin-top: 30px;
+   
+    
+}
+.contener .left h1, .contener .left h2{
+    padding-left: 50px;
+    
+}
+.contener .left{
+    margin-top:0px ;
+   ;
+}
+
+/*
+/*contact*/
+.menu{
+    width: 45px;
+    display: none;
+}
+.contact-titre h1{
+    margin-top: 100px;
+}
+.contact{
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 0px;
+    display: flex;
+}
+.contact-form form{
+    
+}
+.contact-titre{
+    width: 100%;
+}
+.contact-titre h1{
+    text-align: center;
+    font-size: 40px;
+}
+.contact-form{
+    margin: auto;
+    margin-top: 200px;
+    width: 70%;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color:rgb(8, 8, 36);
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+.contact-form .envoi{
+    display: inline-block;
+    background-color:rgb(8, 8, 36);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 200px;
+    transition: ease .35s;
+    text-transform: uppercase;
+
+}
+.contact-form .envoi:hover{
+    cursor: pointer;
+    
+}
+@media screen and (max-width:915px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+}
+@media screen and (max-width:700px){
+    .contener{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:740px){
+    header{
+        padding: 0;
+        
+    }
+    header .menu{
+        display: block;
+    }
+    .navbar{
+        top: 0;
+        left: 0;
+        position: absolute;
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-left: 0;
+
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .navbar li{
+        margin: 25px 0;
+    }
+    header .menu{
+        position: absolute;
+        top: 20px;
+        left: 170px;
+    }
+
+}
+@media screen and (max-width: 420px){
+    .contener .left h1, .contener .left h2  {
+        padding-left: 5px;
+
+    }
+    .contener .right img {
+        margin-left: 5px;
+        width: 280px;
+    }
+    .contener .left{
+        
+    }
+    header h1{
+        font-size: 20px;
+        
+    }
+}
+@media screen and (max-width:370px){
+    .projets .contenu img{
+        margin-left: 0px;
+        width: 250px;
+    }
+    .image img{
+        width: 100%;
+        margin-left: 5px;
+       
+    }
+    .container .image{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+   
+}
+
+/*
+@media (max-width:990) {
+    .contener{
+        height: 80vh;
+    }
+    #menu-icon{
+        display: inline;
+    }
+    .navbar{
+        position: absolute;
+        top: -700%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all.30s;
+    }
+    .navbar a{
+        display: block;
+        padding: 1.1rem;
+        margin: 1.3rem;
+        border-left: 2px solid var(--text-color);
+    }*/
+
+    

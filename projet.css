@@ -1,0 +1,66 @@
+body{
+    font-family: century gothic; 
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(hgk.png);
+    background-size: 100%;
+    color: #fff;
+    }
+header{
+    
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px 15%;
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+span{
+    color: red;
+}
+.navbar{
+    display: flex;
+    padding: 25px 15%;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar li{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    
+}
+ul li{
+    list-style-type: none;
+    
+    
+}
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10pxs;
+    color: #fff;
+
+}
+.contenu{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(370px,auto));
+ grid-gap: 2rem;
+ align-items: center;
+ margin-top: 4.5rem;
+ margin-left: 20px;
+}
+.contenu img{
+    width: 380px;
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .30s;
+}

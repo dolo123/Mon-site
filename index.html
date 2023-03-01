@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------star header----->
+    <header>
+          <h1>Port <span>folio</span></h1>
+          <div>
+                 <ul class="navbar">
+                     <li class="menu-acc">  <a href="index.html">Accueil</a></li>
+                     <li class="menu-pro"><a href="Projet.html">Projet</a></li>
+                     <li class="menu-a-pros"><a href="A-propos.html">A-propos</a></li>
+                    <li class="menu-con"><a href="Contact.html">Contat</a></li>
+               </ul>
+               <img src="bout.jfif" alt="menu" class="menu">
+          </div> 
+      
+      </header>
+      <!------star Accueil----->
+      <div class="container">
+        <div class="image">
+          <img src="oumar.png" alt="tof">
+        </div>
+      <section class="Accueil">
+        <h1>Bonjour!</h1>
+        <h2>Je suis Oumar A Dolo</h2>
+        <h3>je suis un Developpeur de site web et mobile <br>J'ai été formé par Néné sylla à l'ecole <br>superieur de commerce de technologie.</h3>
+        <a href="oumar.pdf">Télécharger mon CV</a>
+      </section>
+    </div>
+    <script>
+      const menu = document.querySelector(" .menu ") 
+      const navbar = document.querySelector(".navbar" ) 
+      
+             menu.addEventListener('click',()=>{
+              navbar.classList.toggle('mobile-menu')
+             })
+     </script>  
+</body>
+</html>

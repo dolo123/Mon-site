@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Port <span>folio</span></h1>
+        <div>
+               <ul class="navbar">
+                   <li class="menu-acc">  <a href="index.html">Accueil</a></li>
+                   <li class="menu-pro"><a href="PROJET.html">Projet</a></li>
+                   <li class="menu-a-pros"><a href="A-propos.html">A-propos</a></li>
+                  <li class="menu-con"><a href="Contact.html">Contat</a></li>
+             </ul>
+             <img src="bout.jfif" alt="menu" class="menu">
+        </div> 
+    
+    </header>
+    <div class="contener">
+    <div class="left">
+            <h1>A-Propos</h1>
+            <h2>Lorem ipsum dolor sit amet <br> consectetur adipiscing elit. <br>
+             Cupiditate distinctio beatae <br>quis reiciendis!Fugiat atque <br>
+             asperiores velit. Doloremque <br>nihil deleniti consequatur <br>
+             nemo odit consectetur</h2>
+    </div>
+    <div class="right">
+        <img src="oumar.png" alt="image">
+    </div>
+    </div>
+    <script>
+        const menu = document.querySelector(" .menu ") 
+        const navbar = document.querySelector(".navbar" ) 
+        
+               menu.addEventListener('click',()=>{
+                navbar.classList.toggle('mobile-menu')
+               })
+       </script>  
+</body>
+</html>

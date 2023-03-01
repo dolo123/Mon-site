@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Port <span>folio</span></h1> 
+        <div>
+        
+               <ul class="navbar">
+                   <li class="menu-acc">  <a href="index.html">Accueil</a></li>
+                   <li class="menu-pro"><a href="Projet.html">Projet</a></li>
+                   <li class="menu-a-pros"><a href="A-propos.html">A-propos</a></li>
+                  <li class="menu-con"><a href="Contact.html">Contat</a></li>
+             </ul>
+             <img src="bout.jfif" alt="menu" class="menu">
+        </div>
+    </header>
+    <section class="projets">
+        <div class="titre"><h1>Mes projets</h1></div>
+            <div class="contenu">
+               <div class="img"><img src="image1.jpg" alt="photo"></div> 
+               <div class="img"><img src="image3.jpg" alt="photo"></div> 
+               <div class="img"><img src="image3.jpg" alt="photo"></div> 
+               <div class="img"><img src="image4.jpg" alt="photo"></div> 
+               <div class="img"><img src="image5.jpg" alt="photo"></div>
+               <div class="img"><img src="image6.png" alt="photo"></div>
+            </div>
+    </section> 
+    <script>
+        const menu = document.querySelector(" .menu ") 
+        const navbar = document.querySelector(".navbar" ) 
+        
+               menu.addEventListener('click',()=>{
+                navbar.classList.toggle('mobile-menu')
+               })
+       </script>         
+</body>
+</html>
